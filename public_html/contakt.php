@@ -14,6 +14,7 @@ $mess = "Jméno: ".$_POST['jmeno']."\nEmail: ".$_POST['email']."\nText:\n".$_POS
 if(empty($_POST['jmeno'])||empty($_POST['zprava'])|| empty($_POST['email']) ||!ereg("^.+@.+\..+$", $_POST['email'])) {
 echo "<script>alert('Špatně zadané údaje, zkuste to prosím znovu.');</script>";
 echo "<p>Váš e-mail se <strong>nepodařilo odeslat</strong>. Pravděpodobně jste nevyplnili všechny údaje.</p>"; 
+
 exit();
 }
 else{
